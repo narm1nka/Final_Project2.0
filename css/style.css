@@ -10,6 +10,7 @@ body {
 }
 
 
+
 /* <!-- =========================================== Cursor start ============================================= --> */
 
 :root {
@@ -40,10 +41,11 @@ body {
     height: 20px;
     border: 10px solid rgba(var(--white-rbg-color), .8);
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     transition-duration: 200ms;
     transition-timing-function: ease-out;
     animation: cursor-animate 550ms infinite alternate;
+    z-index: 99999999;
     
  }
  
@@ -191,9 +193,10 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url(https://rokstar-portfolio.netlify.app/assets/img/bg/slider-bg.jpg);
-    background-position: center top;
-	/* background-size:cover; */
+    background-position: center ;
     background-repeat: no-repeat;
+    
+   
 }
 
 .forma {
@@ -351,6 +354,7 @@ body {
   background: #ffffff;
   content: "";
   margin-top: 30px;
+
 }
 
 .service_box:hover {
@@ -389,6 +393,29 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
  /* <!-- =========================================== Section4 start ============================================= --> */
 
  .forma11{
@@ -402,7 +429,7 @@ body {
  .a_color {
   
   width: 100%;
-  height: 1100px;
+  min-height: 100px;
   background-color: rgb(240,240,240);
 }
 
@@ -412,16 +439,14 @@ body {
   width: 100%;
   
   
+  
 }
 .portfolio_control {
   width: 100%;
-  height: auto;
-  /* clear: both;
-  float: left; */
-  
+  min-height: auto;
+
   margin-top: 60px;
   margin-bottom: 55px;
-  
 }
 
 
@@ -450,7 +475,7 @@ body {
 
 .portfolio_list {
   width: 100%;
-  height: auto;
+  min-height: auto;
 }
 
 .portfolio_list .item {
@@ -544,7 +569,7 @@ body {
   color: #202020;
   padding-left: 15px;
   float: left;
-  margin-left: 100px;
+ 
 }
 
 .data h2{
@@ -563,12 +588,12 @@ body {
 
 
 .inp{
-  width: 650px;
+  width: 100%;
   height: 250px;
   float: left;
   /* background-color: red; */
-  margin-top: 180px;
-  margin-left: 150px;
+  margin-top: 107px;
+ 
 }
 
 .inp h4{
@@ -580,7 +605,7 @@ body {
 }
 
 .inp input{
-  width: 300px;
+  width: 45%;
   height: 45px;
   margin-right: 20px;
   
@@ -594,8 +619,8 @@ body {
 
 
 .inp textarea{
-  width: 625px;
-  height: 100px;
+  width: 100%;
+  height: 80px;
   padding: 13px 15px;
   margin-top: 40px;
   border-top: 0px;
@@ -612,8 +637,12 @@ body {
 }
 
 @media (max-width: 987px){
-  .contact {
-    margin-top: 1750px;
+  
+  .words span{
+    font-size: 35px;
+  }
+  .words{
+    margin-left: 15px;
   }
 }
 

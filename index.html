@@ -29,8 +29,13 @@
 
     <!-- ========= CSS ========= -->
     <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/media.css">
+
 
 
 
@@ -158,11 +163,11 @@
                         <div class="sosial_links">
                             <span>Share :</span>
                             <div class="icons">
-                                <a href=""><i class="fa-brands fa-facebook-f"></i></i></a>
+                                <a href="https://www.facebook.com/iatc.edu.az/"><i class="fa-brands fa-facebook-f"></i></i></a>
                                 <a href=""><i class="fa-brands fa-twitter"></i></a>
                                 <a href=""><i class="fa-brands fa-dribbble"></i></a>
                                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/iatc.edu.az/"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -245,8 +250,112 @@
 
  <!-- ========================================= Section3 end ======================================== -->
 
+<!-- testimonials  -->
+<div class="container position-relative" style="z-index: 0;">
+    <style>
+       
+       
+  
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+          min-height: 300px;
+
+        }
+  
+      </style>
+ 
+  
+   
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="service_box " style="width: 50%;">
+            <i class="fa-sharp fa-solid fa-tv"></i>
+
+            <div class="card_text">
+                <h3>Web Design</h3>
+                <p>
+                    I ought to just try that with my boss; I'd get kicked out on the spot. But who knows, maybe that would be the best
+                </p>
+            </div>
+        </div></div>
+          <div class="swiper-slide"><div class="service_box "  style="width: 50%;">
+            <i class="fa-sharp fa-solid fa-tv"></i>
+
+            <div class="card_text">
+                <h3>Web Design</h3>
+                <p>
+                    I ought to just try that with my boss; I'd get kicked out on the spot. But who knows, maybe that would be the best
+                </p>
+            </div>
+        </div></div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+       
+        </div>
+       
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        }
+        });
+      </script>
+</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 <!-- ========================================= Section4 start ======================================== -->
@@ -317,9 +426,10 @@
             </div>
             
     </div>
-    <div class="forma22"></div>
     
 </section>
+
+<div class="forma22"></div>
 
 <!-- ========================================= Section4 end ======================================== -->
 
@@ -330,12 +440,10 @@
 <!-- ========================================= Footer start ======================================== -->
 
 <section id="contact">
-
-
-    <div class="container-fluid">
+    <div class="container">
         <div class="contact">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="data">
                         <br>
                         <br>
@@ -346,8 +454,7 @@
                         <span class="kv"></span>
                         
                         <br>
-                        <p>100 Main St, Blacktown NSW 2148, <br>
-                            Australia</p>
+                        <p>100 Main St, Blacktown NSW 2148, <br> Australia</p>
                         <p>support@bold.com, info@youremail.com</p>
                         <p>+256-4516-556, +(257) 56812749</p>
                         <br>
@@ -365,15 +472,21 @@
                         </div>
                     </div>
                 </div>
+
+
                 
-                <div class="col-lg-8">
-                    <div class="inp">
+
+                    <div class="col-lg-6">
+                        <div class="inp">
                         
-                        <input type="text" placeholder="Name Here*">
-                        <input type="text" placeholder="Email Here*">
-                        <textarea name="form-mesage" class="form-control" rows="5" placeholder="Text Here*"></textarea>
+                            <input type="text" placeholder="Name Here*">
+                            <input type="text" placeholder="Email Here*">
+                            <textarea name="form-mesage" class="form-control" rows="5" placeholder="Text Here*"></textarea>
+                        </div>
                     </div>
-                </div>
+
+                
+
             </div>
         </div>
     </div>
