@@ -349,7 +349,7 @@ body {
 .service_box {
   
   width: 100%;
-  height: 160px;
+  height: 180px;
   float: left;
   background: #ffffff;
   content: "";
@@ -372,14 +372,15 @@ body {
   font-weight: 600;
   letter-spacing: 0;
   color: #222222;
-  margin-left: 85px;
+  margin-left: 75px;
   
 }
 
 .service_box p {
   
-  padding-left: 85px;
+  padding-left: 75px;
   padding-top: 15px;
+  
 }
 
 
